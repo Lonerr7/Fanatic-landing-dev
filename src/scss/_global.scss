@@ -1,0 +1,20 @@
+@import 'vars';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family1;
+  font-weight: 400;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.lock {
+  overflow: hidden;
+}

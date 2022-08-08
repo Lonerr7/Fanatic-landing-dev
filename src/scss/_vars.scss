@@ -1,0 +1,28 @@
+$container: 1230px;
+$font-family1: 'Comfortaa', cursive;
+$font-family2: 'Inter', sans-serif;
+
+$color1: #262c27;
+$color2: #fff;
+$color3: #b9c400;
+$color4: #0093a1;
+
+%btn-small {
+  color: $color2;
+  background-color: $color1;
+  font-family: $font-family1;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  padding: 11px 74px;
+}
+
+%btn-big {
+  font-family: $font-family1;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  padding: 18px 197px;
+  color: $color4;
+  border: 2px solid $color4;
+}
