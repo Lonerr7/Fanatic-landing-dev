@@ -26,3 +26,21 @@ $color4: #0093a1;
   color: $color4;
   border: 2px solid $color4;
 }
+
+%btn-hover-small {
+  color: $color1;
+  background-color: $color3;
+}
+
+%btn-hover-big {
+  color: $color1;
+  background-color: $color3;
+  border: 2px solid $color3;
+}
+
+%title {
+  font-size: 60px;
+  line-height: 67px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'media';
 
 // === header ===
 
@@ -58,12 +59,27 @@
     margin-right: 15px;
   }
 
+  &__logo {
+    svg {
+      path {
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        path {
+          fill: $color4;
+        }
+      }
+    }
+  }
+
   &__btn {
     @extend %btn-small;
     text-transform: uppercase;
+    transition: all 0.2s;
 
     &:hover {
-      text-decoration: underline;
+      @extend %btn-hover-small;
     }
   }
 
@@ -72,9 +88,10 @@
     font-size: 20px;
     line-height: 22px;
     font-weight: 700;
+    transition: all 0.3s;
 
     &:hover {
-      text-decoration: underline;
+      transform: scale(1.2);
     }
   }
 
@@ -206,6 +223,12 @@
     justify-content: center;
     flex-direction: column;
     color: $color2;
+    transition: color .3s;
+    font-family: $font-family2;
+
+    &:hover {
+      color: $color4;
+    }
   }
 
   &__imgbox {
@@ -213,8 +236,21 @@
     margin-bottom: 12px;
   }
 
-  &__btnimg {
-    margin-left: 16px;
+  svg {
+    margin-left: 10px;
+    
+    path, circle {
+      transition: all .3s;
+    }
+
+    &:hover {
+      path {
+        fill: $color3;
+      }
+      circle {
+        stroke: $color3;
+      }
+    }
   }
 
   &__box--bottom {
@@ -224,10 +260,7 @@
   }
 
   &__title {
-    text-transform: uppercase;
-    font-size: 60px;
-    line-height: 66px;
-    font-weight: 400;
+    @extend %title;
   }
 
   &__table {
@@ -247,19 +280,73 @@
   &__tablevalue:not(:last-child) {
     margin-bottom: 24px;
   }
+}
 
-  &__row {
+// === /specs ===
+
+// === shop ===
+
+.shop {
+  padding: 150px 0;
+
+  &__title {
+    @extend %title;
+    color: $color4;
+    margin-bottom: 50px;
+  }
+
+  &__box {
     display: flex;
-    // justify-content: space-between;
-    
-    margin-bottom: 24px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 0;
+  }
+
+  &__textbox {
+    margin-bottom: 25px;
+    max-width: 292px;
+    font-family: $font-family2;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle--blue {
+    color: $color4;
+  }
+
+  &__images {
+    display: flex;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 59px;
+    left: 293px;
+  }
+
+  &__btn {
+    @extend %btn-big;
+    text-transform: uppercase;
+    transition: all 0.2s;
+
+    &:hover {
+      @extend %btn-hover-big;
+    }
+  }
 }
 
-// === /specs ===
-
-@import 'media';
+// === /shop ===
