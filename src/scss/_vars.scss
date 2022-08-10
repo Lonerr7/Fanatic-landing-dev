@@ -44,3 +44,13 @@ $color4: #0093a1;
   font-weight: 400;
   text-transform: uppercase;
 }
+
+%play-btn {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $color2;
+  transition: color 0.3s;
+  font-family: $font-family2;
+}
