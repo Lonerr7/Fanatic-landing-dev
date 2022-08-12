@@ -16,6 +16,12 @@
   }
 }
 
+@media (max-width: 801px) {
+  .header {
+    padding-top: 25px;
+  }
+}
+
 @media (max-width: 601px) {
   .header::before {
     bottom: -166px;
@@ -43,10 +49,6 @@
 }
 
 @media (max-width: 524px) {
-  .header {
-    padding-top: 30px;
-  }
-
   .header__nav {
     flex-direction: column;
     gap: 20px;
@@ -71,3 +73,71 @@
 }
 
 // === /haeder ===
+
+// === section.specs ===
+
+@media (max-width: 931px) {
+  .specs__box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+  }
+
+  .specs__textbox {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    flex-direction: column;
+  }
+
+  .specs__text {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .specs__btn {
+    left: 0;
+    right: 0;
+    top: 113%;
+    width: 120px;
+    height: 108px;
+    margin: 0 auto;
+  }
+
+  .specs__img {
+    margin-top: 80px;
+  }
+
+  .specs__box--bottom {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 766px) {
+  .specs__textbox {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 591px) {
+  .specs__table {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .specs__tabletitle:not(:last-child), .specs__tablevalue:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 556px) {
+  .specs__text {
+    font-size: 17px;
+  }
+}
+
+// === /section.specs ===
