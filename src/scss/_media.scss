@@ -51,12 +51,16 @@
 @media (max-width: 524px) {
   .header__nav {
     flex-direction: column;
-    gap: 20px;
     margin-bottom: 140px;
+  }
+
+  .header__logo {
+    margin-bottom: 20px;
   }
 
   .header__btn {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -90,12 +94,18 @@
     position: relative;
     z-index: 20;
     flex-direction: column;
+    gap: 0;
   }
 
   .specs__text {
     max-width: 100%;
     width: 100%;
+
+    &:first-child {
+      margin-bottom: 88px;
+    }
   }
+
 
   .specs__btn {
     left: 0;
@@ -117,8 +127,8 @@
 }
 
 @media (max-width: 766px) {
-  .specs__textbox {
-    gap: 50px;
+  .specs__text:first-child {
+    margin-bottom: 50px;
   }
 }
 
