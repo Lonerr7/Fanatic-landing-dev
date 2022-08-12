@@ -626,6 +626,11 @@
     }
   }
 
+  &__gallerybox {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
   &__link {
     color: $color2;
     text-transform: uppercase;
@@ -649,6 +654,13 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 52px;
+  }
+
+  &__list {
+    li {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
   }
 }
 
